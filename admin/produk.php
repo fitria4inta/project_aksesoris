@@ -83,7 +83,7 @@ $query = mysqli_query(
 
     <div class="container">
 
-        <a href="index.php">Dashboard</a>
+        <a href="index.php">Dashboard Admin</a>
 
         <a href="produk.php">Produk</a>
 

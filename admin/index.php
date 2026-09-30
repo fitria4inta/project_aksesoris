@@ -31,7 +31,10 @@ $data_kategori = mysqli_fetch_assoc($total_kategori);
 <div class="navbar admin-navbar">
     <div class="container">
         <a href="index.php">Dashboard Admin</a>
-        <a href="produk.php">Produk</a>
+        
+        <!-- Tambahkan ../ agar mengarah ke produk.php di luar folder admin -->
+        <a href="../produk.php">Produk</a>
+        
         <a href="../index.php">Website</a>
         <a href="logout.php">Logout</a>
     </div>

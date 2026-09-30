@@ -358,3 +358,358 @@ th {
     margin-top: 0;
     font-size: 2rem;
 }
+
+/* =========================================
+   KHUSUS HALAMAN LOGIN ADMIN
+   ========================================= */
+
+.login-body {
+    background: #fcf9f5; /* Menjaga warna background krem[cite: 6] */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Desain Card bergaya Glassmorphism[cite: 7] */
+.login-card {
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px; 
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
+}
+
+.login-card h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #222; 
+}
+
+.login-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Styling Input Field[cite: 7] */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    background: transparent; 
+    border: 1px solid rgba(0, 0, 0, 0.2); 
+    border-radius: 8px; 
+    font-family: 'Inter', sans-serif;
+    color: #222; 
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.login-card input::placeholder {
+    color: #888;
+}
+
+.login-card input:focus {
+    border-color: #222; 
+}
+
+/* Styling Checkbox */
+.remember-me {
+    display: flex;
+    align-items: center;  /* Memaksa elemen di dalamnya sejajar di tengah */
+    margin-top: 10px;     
+    margin-bottom: 30px;  /* Jarak aman dengan tombol Login */
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Mengunci ukuran checkbox secara paksa */
+.remember-me input {
+    margin: 0 8px 0 0 !important; /* Jarak 8px hanya di sebelah kanan */
+    padding: 0 !important;
+    width: 16px !important;
+    height: 16px !important;
+    flex-shrink: 0; /* Mencegah kotak penyok/mengecil */
+    cursor: pointer;
+}
+
+/* Merapikan tinggi teksnya */
+.remember-me label {
+    margin: 0;
+    line-height: 1; /* Menyelaraskan teks tepat dengan tinggi kotak */
+    cursor: pointer;
+}
+
+/* Styling Tombol Login */
+.btn-login {
+    width: 100%;
+    background: #222; /* Menggunakan warna gelap agar kontras */
+    color: #fff;
+    border: none;
+    border-radius: 8px; 
+    padding: 12px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.btn-login:hover {
+    background: #444; 
+    color: #fff;
+}
+
+.back-link {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #222;
+}
+
+/* =========================================
+   KHUSUS HALAMAN TENTANG KAMI
+   ========================================= */
+
+/* Membuat wadah flex agar kotak tentang kami rapi di tengah */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Memberi ruang agar kontak otomatis terdorong ke bawah */
+    padding: 40px 0;
+}
+
+/* Desain kotak "Tentang Kami" agar tidak flat */
+.about-box {
+    background: #fff;
+    padding: 60px;
+    border-radius: 12px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.05); /* Bayangan lembut */
+    text-align: center;
+    max-width: 800px;
+}
+
+.about-box h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.about-box p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   UPDATE PSEUDO-FOOTER (3 KOLOM ELEGAN)
+   ========================================= */
+
+.pseudo-footer {
+    background: #020202;
+    padding: 60px 0 40px 0;
+    margin-top: 60px;
+    border-top: 1px solid #e0e0e0; /* Garis pemisah tipis */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-col h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #eeeeee;
+}
+
+.footer-col p {
+    font-size: 0.95rem;
+    color: #f4f2f2;
+    margin: 6px 0;
+    line-height: 1.6;
+}
+
+/* Penataan Rata Kiri untuk Alamat */
+.footer-left {
+    text-align: left;
+}
+
+/* Penataan Rata Tengah untuk Kontak */
+.footer-center {
+    text-align: center;
+}
+
+/* Penataan Rata Kanan untuk Logo */
+.footer-right {
+    text-align: right;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #faf6f6;
+    margin-bottom: 5px;
+}
+
+.footer-right .tagline {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #ffffff;
+}
+
+/* Responsif: Jika dibuka di HP, otomatis menjadi tumpukan vertikal yang rapi */
+@media(max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+    
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        text-align: center;
+    }
+}
+
+/* =========================================
+   PERBAIKAN KOLOM AKSI PADA TABEL
+   ========================================= */
+
+/* Memaksa judul (th) dan isi (td) pada kolom paling akhir agar posisinya di tengah */
+table th:last-child, 
+table td:last-child {
+    text-align: center;
+}
+
+/* =========================================
+   KHUSUS HALAMAN DETAIL PRODUK
+   ========================================= */
+
+/* Mengatur area keseluruhan agar posisinya di tengah layar */
+.product-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 50px 0;
+}
+
+/* Membagi wadah menjadi 2 kolom dengan jarak (gap) */
+.product-detail-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    max-width: 950px;
+    width: 100%;
+    align-items: center; /* Membuat teks dan gambar sejajar secara vertikal */
+}
+
+/* KOLOM KIRI (Gambar) */
+.product-detail-image {
+    flex: 1; /* Mengambil 50% ruang */
+}
+
+.product-detail-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* KOLOM KANAN (Info Produk) */
+.product-detail-info {
+    flex: 1; /* Mengambil 50% ruang */
+    display: flex;
+    flex-direction: column;
+}
+
+.product-detail-info h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.product-detail-info .category {
+    font-family: 'Inter', sans-serif;
+    color: #666;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.product-detail-info .price {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.product-detail-info .description {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.product-detail-info .stock {
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 40px;
+}
+
+/* Membatasi lebar tombol kembali agar tidak memanjang penuh */
+.btn-back {
+    align-self: flex-start;
+    padding: 15px 35px;
+}
+
+/* Responsif: Jika dibuka di HP, kembali menumpuk atas-bawah */
+@media(max-width: 768px) {
+    .product-detail-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .btn-back {
+        align-self: center; /* Tombol ke tengah jika di HP */
+        width: 100%;
+    }
+}

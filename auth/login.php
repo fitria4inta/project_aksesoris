@@ -1,97 +1,53 @@
 <?php
-
 session_start();
 
 if (isset($_SESSION['admin_id'])) {
-
     header("Location: ../admin/index.php");
-
     exit;
 }
-
 ?>
 
 <!DOCTYPE html>
-<html>
-
+<html lang="id">
 <head>
-
     <title>Login Admin - Abigaile Co</title>
-
-    <link rel="stylesheet" href="../assets/style.css">
-
+    <!-- Gunakan cache busting selama masa pengembangan -->
+    <link rel="stylesheet" href="../assets/style.css?v=<?= time(); ?>">
 </head>
+<body class="login-body">
 
-<body>
-
-<div class="container">
-
-    <div class="card"
-         style="max-width: 450px; margin: 100px auto;">
-
-        <h1>Login Admin</h1>
-
-        <p>
-            Silakan login untuk masuk ke dashboard.
-        </p>
+<div class="login-container">
+    <div class="login-card">
+        <h1>Login</h1>
+        <p>Silakan login untuk masuk ke dashboard.</p>
 
         <?php
-
         if (isset($_SESSION['error'])) {
-
-            echo '<div class="alert">'
-                . $_SESSION['error'] .
-                '</div>';
-
+            echo '<div class="alert">' . $_SESSION['error'] . '</div>';
             unset($_SESSION['error']);
         }
-
         ?>
 
-        <form
-            action="proses_login.php"
-            method="POST"
-        >
+        <form action="proses_login.php" method="POST">
+            <div class="input-group">
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+            
+            <div class="input-group">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
 
-            <label>
-                Username
-            </label>
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember me</label>
+            </div>
 
-            <input
-                type="text"
-                name="username"
-                required
-            >
-
-            <label>
-                Password
-            </label>
-
-            <input
-                type="password"
-                name="password"
-                required
-            >
-
-            <button
-                type="submit"
-                class="btn"
-            >
-                Login
-            </button>
-
+            <button type="submit" class="btn btn-login">Login</button>
         </form>
 
-        <br>
-
-        <a href="../index.php">
-            ← Kembali ke Website
-        </a>
-
+        <a href="../index.php" class="back-link">← Kembali ke Website</a>
     </div>
-
 </div>
 
 </body>
-
 </html>
