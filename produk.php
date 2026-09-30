@@ -34,7 +34,7 @@ if ($keyword != '') {
 
 <head>
 
-    <title>Produk - Sweet Cake</title>
+    <title>Produk - Abigaile Co</title>
 
     <link rel="stylesheet" href="assets/style.css">
 
@@ -47,7 +47,7 @@ if ($keyword != '') {
     <div class="container">
 
         <a href="index.php">
-            Sweet Cake
+            Abigaile Co
         </a>
 
         <a href="produk.php">

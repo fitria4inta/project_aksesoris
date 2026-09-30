@@ -42,7 +42,7 @@ if (!$produk) {
     <div class="container">
 
         <a href="index.php">
-            Sweet Cake
+            Abigaile Co
         </a>
 
         <a href="produk.php">

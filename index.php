@@ -16,7 +16,7 @@ $query = mysqli_query(
 
 <head>
 
-    <title>Sweet Cake - Toko Kue</title>
+    <title>Abigaile Co - Accessories Store</title>
 
     <link rel="stylesheet" href="assets/style.css">
 
@@ -29,7 +29,7 @@ $query = mysqli_query(
     <div class="container">
 
         <a href="index.php">
-            Sweet Cake
+            Abigaile Co
         </a>
 
         <a href="produk.php">
@@ -49,11 +49,11 @@ $query = mysqli_query(
     <div class="container">
 
         <h1>
-            Sweet Cake
+            Abigaile Co
         </h1>
 
         <p>
-            Kue lezat untuk setiap momen spesial.
+            Your Everyday Elegance
         </p>
 
         <a

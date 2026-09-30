@@ -118,7 +118,7 @@ $data_kategori = mysqli_fetch_assoc(
         <h2>Manajemen Produk</h2>
 
         <p>
-            Kelola katalog produk Sweet Cake.
+            Kelola katalog produk Abigaile Co.
         </p>
 
         <a

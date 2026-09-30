@@ -16,7 +16,7 @@ if (isset($_SESSION['admin_id'])) {
 
 <head>
 
-    <title>Login Admin - Sweet Cake</title>
+    <title>Login Admin - Abigaile Co</title>
 
     <link rel="stylesheet" href="../assets/style.css">
 

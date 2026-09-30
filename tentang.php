@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Tentang Kami - Sweet Cake</title>
+    <title>Tentang Kami - Abigaile Co</title>
 
     <link rel="stylesheet" href="assets/style.css">
 
@@ -16,7 +16,7 @@
     <div class="container">
 
         <a href="index.php">
-            Sweet Cake
+            Abigaile Co
         </a>
 
         <a href="produk.php">
@@ -35,18 +35,14 @@
 
     <div class="card">
 
-        <h1>Tentang Sweet Cake</h1>
+        <h1>Tentang Abigaile Co</h1>
 
         <p>
-            Sweet Cake adalah UMKM yang bergerak
-            dalam bidang produksi dan penjualan
-            berbagai macam kue.
+            Abigaile Co. is a little space for pretty accessories designed to complement your everyday style. We believe that the right accessory can add a special touch to every look.
         </p>
 
         <p>
-            Kami menyediakan produk kue untuk
-            kebutuhan keluarga, acara ulang tahun,
-            pernikahan, maupun berbagai acara lainnya.
+            From simple everyday pieces to charming little details, we are here to help you express your style and feel confident in your own way♡
         </p>
 
         <h2>Kontak</h2>
@@ -58,7 +54,7 @@
 
         <p>
             Instagram:
-            @sweetcake
+            @abigaile.co
         </p>
 
     </div>
