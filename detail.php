@@ -38,19 +38,15 @@ if (!$produk) {
 <body>
 
 <div class="navbar">
-
     <div class="container">
-
-        <a href="index.php">
-            Abigaile Co
-        </a>
-
-        <a href="produk.php">
-            Produk
-        </a>
-
+        <!-- Urutan pertama otomatis menjadi logo di kiri berkat CSS sebelumnya -->
+        <a href="index.php">Abigaile Co</a>
+        
+        <!-- Menu lainnya akan otomatis berjejer di ujung kanan -->
+        <a href="index.php">Home</a>
+        <a href="produk.php">Produk</a>
+        <a href="tentang.php">Tentang Kami</a>
     </div>
-
 </div>
 
 <div class="container">

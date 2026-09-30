@@ -25,46 +25,29 @@ $query = mysqli_query(
 <body>
 
 <div class="navbar">
-
     <div class="container">
-
-        <a href="index.php">
-            Abigaile Co
-        </a>
-
-        <a href="produk.php">
-            Produk
-        </a>
-
-        <a href="tentang.php">
-            Tentang Kami
-        </a>
-
+        <!-- Urutan pertama otomatis menjadi logo di kiri berkat CSS sebelumnya -->
+        <a href="index.php">Abigaile Co</a>
+        
+        <!-- Menu lainnya akan otomatis berjejer di ujung kanan -->
+        <a href="index.php">Home</a>
+        <a href="produk.php">Produk</a>
+        <a href="tentang.php">Tentang Kami</a>
     </div>
-
 </div>
 
 <section class="hero">
-
     <div class="container">
-
-        <h1>
-            Abigaile Co
-        </h1>
-
-        <p>
-            Your Everyday Elegance
-        </p>
-
-        <a
-            href="produk.php"
-            class="btn"
-        >
-            Lihat Produk
-        </a>
-
+        <div class="hero-content">
+            <h1>Abigaile Co</h1>
+            <p>Your Everyday Elegance</p>
+            <a href="produk.php" class="btn">Lihat Produk</a>
+        </div>
+        <div class="hero-image">
+            <!-- Ubah nama file gambar sesuai dengan yang kamu simpan -->
+            <img src="assets/images/hero.jpg" alt="Abigaile Co Hero">
+        </div>
     </div>
-
 </section>
 
 <div class="container">

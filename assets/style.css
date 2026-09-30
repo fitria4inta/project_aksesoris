@@ -1,11 +1,14 @@
+/* Import font dari Google Fonts untuk kesan elegan dan modern */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f7f7f7;
+    font-family: 'Inter', sans-serif;
+    background: #fcf9f5; /* Warna krem/beige muda ala referensi */
     color: #333;
 }
 
@@ -15,87 +18,195 @@ body {
     margin: auto;
 }
 
+/* --- NAVBAR --- */
 .navbar {
-    background: #7b3f00;
-    padding: 15px 0;
+    padding: 25px 0;
+    background: transparent;
 }
 
+.navbar .container {
+    display: flex;
+    align-items: center;
+}
+
+/* Desain link navbar di kanan */
 .navbar a {
-    color: white;
+    color: #333;
     text-decoration: none;
-    margin-right: 20px;
+    margin-left: 30px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
 }
 
+/* Mengubah link pertama (Abigaile Co) menjadi seperti Logo di ujung kiri */
+.navbar a:first-child {
+    margin-left: 0;
+    margin-right: auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    opacity: 0.7;
+}
+
+/* --- HERO SECTION --- */
 .hero {
-    padding: 70px 20px;
-    text-align: center;
-    background: #ffe9d6;
+    padding: 60px 0;
+    background: transparent;
 }
 
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    color: #222;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+/* --- TOMBOL (BUTTONS) --- */
 .btn {
     display: inline-block;
-    padding: 10px 18px;
-    background: #7b3f00;
-    color: white;
+    padding: 12px 24px;
+    background: transparent;
+    color: #222;
     text-decoration: none;
-    border-radius: 5px;
-    border: none;
+    border: 1px solid #222; /* Tombol bergaris modern */
     cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
-.btn-danger {
-    background: #dc3545;
+.btn:hover {
+    background: #222;
+    color: #fff;
 }
 
-.btn-warning {
-    background: #f0ad4e;
-}
+.btn-danger { background: transparent; border-color: #dc3545; color: #dc3545; }
+.btn-danger:hover { background: #dc3545; color: white; }
 
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+.btn-warning { background: transparent; border-color: #f0ad4e; color: #f0ad4e; }
+.btn-warning:hover { background: #f0ad4e; color: white; }
+
+/* --- PRODUK SECTION --- */
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #222;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    /* Ubah menjadi 4 kolom menyelaraskan referensi */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 25px;
+}
+
+.card {
+    background: transparent; /* Hilangkan kotak putih */
+    padding: 0;
+    border-radius: 0;
+    margin-bottom: 20px;
+    box-shadow: none; /* Hilangkan bayangan */
+    text-align: left;
 }
 
 .product-image {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
-    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
-input,
-textarea,
-select {
+.card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+.card p {
+    margin: 0 0 10px 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.card strong {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.card .btn {
     width: 100%;
-    padding: 10px;
+    text-align: center;
+}
+
+/* --- ELEMEN LAINNYA --- */
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
     margin-top: 5px;
     margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background: transparent;
+    font-family: 'Inter', sans-serif;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    background: white;
+    background: transparent;
 }
 
-th,
-td {
-    padding: 12px;
-    border: 1px solid #ddd;
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
 }
 
 th {
-    background: #7b3f00;
-    color: white;
+    background: transparent;
+    color: #222;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .alert {
@@ -103,23 +214,147 @@ th {
     margin: 15px 0;
     background: #d4edda;
     color: #155724;
+    border: 1px solid #c3e6cb;
 }
 
 .pagination {
-    margin: 20px 0;
+    margin: 40px 0;
+    text-align: center;
 }
 
 .pagination a {
     display: inline-block;
-    padding: 8px 12px;
-    background: #7b3f00;
-    color: white;
+    padding: 8px 14px;
+    background: transparent;
+    color: #222;
     text-decoration: none;
-    margin-right: 5px;
+    margin: 0 5px;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+.pagination a:hover {
+    background: #222;
+    color: #fff;
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media(max-width: 992px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image {
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media(max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .navbar a {
+        margin: 0 10px;
+    }
+    .navbar a:first-child {
+        margin: 0;
+    }
     .grid {
         grid-template-columns: 1fr;
     }
-} 
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+}
+
+/* =========================================
+   KHUSUS HALAMAN ADMIN DASHBOARD
+   ========================================= */
+
+/* Navbar warna gelap khusus Admin */
+.admin-navbar {
+    background: #222; 
+    padding: 20px 0;
+}
+
+.admin-navbar a {
+    color: #fff; /* Teks menjadi putih agar kontras */
+}
+
+.admin-navbar a:hover {
+    color: #bbb;
+}
+
+/* Sapaan Admin di tengah dan lebih besar */
+.admin-greeting {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+/* Container untuk menengahkan kotak statistik */
+.admin-stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+/* Desain kotak menu agar tidak flat */
+.admin-stat-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 30px 40px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    min-width: 220px;
+    transition: transform 0.3s ease;
+}
+
+.admin-stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.admin-stat-card h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.admin-stat-card h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin: 0;
+    color: #222;
+}
+
+/* Kotak Manajemen Produk di bawah */
+.admin-management-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 50px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 80px auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+}
+
+.admin-management-card h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
