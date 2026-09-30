@@ -78,19 +78,24 @@ if (!$produk) {
 
             <select name="kategori" required>
 
-                <option value="Cake"
-                    <?= $produk['kategori'] == 'Cake' ? 'selected' : ''; ?>>
-                    Cake
+                <option value="Jam Tangan"
+                    <?= $produk['kategori'] == 'Jam Tangan' ? 'selected' : ''; ?>>
+                    Jam Tangan
                 </option>
 
-                <option value="Brownies"
-                    <?= $produk['kategori'] == 'Brownies' ? 'selected' : ''; ?>>
-                    Brownies
+                <option value="Scarf"
+                    <?= $produk['kategori'] == 'Scarf' ? 'selected' : ''; ?>>
+                    Scarf
                 </option>
 
-                <option value="Donat"
-                    <?= $produk['kategori'] == 'Donat' ? 'selected' : ''; ?>>
-                    Donat
+                <option value="Kalung"
+                    <?= $produk['kategori'] == 'Kalung' ? 'selected' : ''; ?>>
+                    Kalung
+                </option>
+
+                <option value="Ikat Pinggang"
+                    <?= $produk['kategori'] == 'Ikat Pinggang' ? 'selected' : ''; ?>>
+                    Ikat Pinggang
                 </option>
 
             </select>

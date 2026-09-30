@@ -64,16 +64,20 @@ require_once "../includes/auth.php";
                     Pilih kategori
                 </option>
 
-                <option value="Cake">
-                    Cake
+                <option value="Jam Tangan">
+                    Jam Tangan
                 </option>
 
-                <option value="Brownies">
-                    Brownies
+                <option value="Scarf">
+                    Scarf
                 </option>
 
-                <option value="Donat">
-                    Donat
+                <option value="Kalung">
+                    Kalung
+                </option>
+
+                <option value="Ikat Pinggang">
+                    Ikat Pinggang
                 </option>
 
             </select>

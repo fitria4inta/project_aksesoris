@@ -132,19 +132,24 @@ $query = mysqli_query(
                     Semua Kategori
                 </option>
 
-                <option value="Cake"
-                    <?= $kategori == 'Cake' ? 'selected' : ''; ?>>
-                    Cake
+                <option value="Jam Tangan"
+                    <?= $kategori == 'Jam Tangan' ? 'selected' : ''; ?>>
+                    Jam Tangan
                 </option>
 
-                <option value="Brownies"
-                    <?= $kategori == 'Brownies' ? 'selected' : ''; ?>>
-                    Brownies
+                <option value="Scarf"
+                    <?= $kategori == 'Scarf' ? 'selected' : ''; ?>>
+                    Scarf
                 </option>
 
-                <option value="Donat"
-                    <?= $kategori == 'Donat' ? 'selected' : ''; ?>>
-                    Donat
+                <option value="Kalung"
+                    <?= $kategori == 'Kalung' ? 'selected' : ''; ?>>
+                    Kalung
+                </option>
+
+                <option value="Ikat Pinggang"
+                    <?= $kategori == 'Ikat Pinggang' ? 'selected' : ''; ?>>
+                    Ikat Pinggang
                 </option>
 
             </select>
