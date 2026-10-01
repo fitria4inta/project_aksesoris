@@ -28,7 +28,7 @@ $data_kategori = mysqli_fetch_assoc($total_kategori);
 <body>
 
 <!-- Tambahkan class admin-navbar agar warnanya bisa dibedakan -->
-<div class="navbar admin-navbar">
+<div class="navbar">
     <div class="container">
         <a href="index.php">Dashboard Admin</a>
         

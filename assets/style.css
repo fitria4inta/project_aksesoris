@@ -20,8 +20,8 @@ body {
 
 /* --- NAVBAR --- */
 .navbar {
-    padding: 25px 0;
-    background: transparent;
+    padding: 20px 0;
+    background: #222; /* Diubah menjadi hitam gelap */
 }
 
 .navbar .container {
@@ -31,11 +31,12 @@ body {
 
 /* Desain link navbar di kanan */
 .navbar a {
-    color: #333;
+    color: #fff; /* Tulisan diubah menjadi putih */
     text-decoration: none;
     margin-left: 30px;
     font-size: 14px;
     letter-spacing: 0.5px;
+    transition: 0.3s ease;
 }
 
 /* Mengubah link pertama (Abigaile Co) menjadi seperti Logo di ujung kiri */
@@ -48,7 +49,7 @@ body {
 }
 
 .navbar a:hover {
-    opacity: 0.7;
+    color: #d1bfae; /* Warna krem emas saat kursor diarahkan ke menu */
 }
 
 /* --- HERO SECTION --- */
